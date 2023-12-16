@@ -1,0 +1,3 @@
+# CppUTestのサンプル
+
+CppUTestを動かすサンプル。
