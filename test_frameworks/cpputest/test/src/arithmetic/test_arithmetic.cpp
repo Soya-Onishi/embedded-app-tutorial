@@ -2,7 +2,10 @@
 #include "CppUTest/TestRegistry.h"
 #include "arithmetic/arithmetic.h"
 
+// テストグループを作成します。
 TEST_GROUP(Arithmetic){};
+
+// 作成したテストグループの中で行うテストを書いていきます。
 
 TEST(Arithmetic, AddNormalValue) { LONGS_EQUAL(30, add(10, 20)); }
 

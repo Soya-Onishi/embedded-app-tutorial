@@ -6,6 +6,7 @@ add_subdirectory(arithmetic)
 
 target_include_directories(MainTest
     PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}/test/include
 )
 
@@ -13,7 +14,7 @@ target_include_directories(MainTest
 target_link_libraries(MainTest
     PRIVATE
         CppUTest
-        TestArithmetic
+        Arithmetic
 )
 
 # ここでテスト機能を有効化し、AllTestsをテストに加える
